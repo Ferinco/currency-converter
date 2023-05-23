@@ -95,14 +95,25 @@
             <div class="container">
                 <div class="container-header"><h3>Currency Converter</h3></div>
                 <div class="container-field">
-                    <div class="container-field-rate">
-                        <input type="text">
-                    </div>
                     <div class="container-field-input">
-                        <select name="USD" id="input-select"></select><input type="number" id="input">
+                        <label for="input">Enter amount:</label>
+                        <input type="number" name="input" id="input">
+                    </div>
+                    <div class="container-field-selects">
+                        <div class="from">
+                            <label for="from">From</label>
+                            <select name="from" id="" class="select"></select>
+                        </div>
+                        <div class="exchange">
+                            <i class="fa fa-exchange"></i>
+                        </div>
+                        <div class="to">
+                            <label for="to:">To</label>
+                           <select name="to" id="" class="select"></select>
+                        </div>
                     </div>
                     <div class="container-field-output">
-                        <select name="USD" id=""><optgroup> <option value="dd">GBP</option></optgroup></select><div class="screen" id="screen"></div>
+                    <div class="screen" id="screen"></div>
                     </div>
                     <div class="container-field-button">
                         <button id="convertBtn">Convert</button>

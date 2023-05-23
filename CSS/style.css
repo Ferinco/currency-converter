@@ -122,10 +122,6 @@ body {
   color: #010125;
 }
 
-.banner-left-container {
-  display: none;
-}
-
 .banner-left-buttons {
   margin-top: 20px;
   display: -webkit-box;
@@ -214,15 +210,6 @@ body {
   gap: 20px;
 }
 
-.banner-right .container-field-rate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .banner-right .container-field input {
   background-color: #c2d6e7;
   border: 0;
@@ -230,20 +217,40 @@ body {
   padding: 10px;
 }
 
-.banner-right .container-field-input input {
-  margin-left: 10px;
+.banner-right .container-field-selects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner-right .container-field-selects select {
+  padding: 5px;
+}
+
+.banner-right .container-field-selects .from, .banner-right .container-field-selects .to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .banner-right .container-field-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
 }
 
 .banner-right .container-field-button button {
+  width: 100%;
   color: white;
   border: 0;
   background-color: #010125;

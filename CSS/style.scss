@@ -96,9 +96,7 @@ body{
                 }
             }
         }
-        &-container{
-            display: none;
-        }
+  
         &-buttons{
             margin-top: 20px;
             display: flex;
@@ -148,26 +146,29 @@ body{
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                &-rate{
-                    display: flex;
-                    justify-content: center;
-                }
                 input{
                     background-color: rgb(194, 214, 231);
                     border: 0;
                     border-radius: 10px;
                     padding: 10px;
                 }
-                &-input{
-                   input{
-                    margin-left: 10px;
-
-                   }
+                &-selects{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    select{
+                        padding: 5px;
+                    }
+                    .from, .to{
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
                 &-button{
                     display: flex;
-                    justify-content: end;
+                 
                     button{
+                        width: 100%;
                         color: white;
                         border: 0;
                         background-color: rgb(1, 1, 37);
