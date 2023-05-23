@@ -164,7 +164,22 @@ body{
 
                    }
                 }
+                &-button{
+                    display: flex;
+                    justify-content: end;
+                    button{
+                        color: white;
+                        border: 0;
+                        background-color: rgb(1, 1, 37);
+                        padding: 5px 15px;
+                        border-radius: 10px;
+
+                    }
+                }
             }
+        }
+        &-buttons, &-rates{
+            display: none;
         }
         }
 }
@@ -209,59 +224,55 @@ body{
                     font-size: 35px;
                 }
             }
-            &-container{
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                width: 300px;
-                height: auto;
-                background-color: white;
-                .container-field{
-                   align-items: left;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                    &-rate{
-                        display: flex;
- 
-                    }
-                    input{
-                        background-color: rgb(194, 214, 231);
-                        border: 0;
-                        border-radius: 10px;
-                        padding: 10px;
-                    }
-                    &-input{
-                       input{
-                        margin-left: 10px;
-                       }
-                    }
-                    &-button{
-                        display: flex;
-                        justify-content: end;
-                        button{
-                            color: white;
-                            border: 0;
-                            background-color: rgb(1, 1, 37);
-                            padding: 5px 15px;
-                            border-radius: 10px;
-
-                        }
-                    }
-                }
-            }
             &-buttons{
-                gap: 40px;
-                .get{
-                    padding: 5px 15px;
-                }
+      display: none;
             }
             &-rates{
-                gap: 40px;
+               display: none;
             }
         }
         &-right{
-display: none;
+            width: 100%;
+            margin-left: 0;
+            .container{
+                padding: 10px;
+                height: auto;
+            }
+            &-buttons{
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                justify-content: start;
+                gap: 20px;
+               
+                .get{
+                    border: 0;
+                    background-color: rgb(1, 1, 37);
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        margin-left: 10px;
+                       font-size: 30px;
+                    }
+                }
+                .more{
+                    border: 0;
+                    background: transparent;
+                }
+            }
+            &-rates{
+                display: flex;
+                gap: 30px;
+                margin-top: 40px;
+                .rate{
+                    align-items: center;
+                    justify-content: center;
+                    text-align: left;
+                }
+            }
             }
     }
     .bottom{

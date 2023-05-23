@@ -64,7 +64,7 @@
                 <h2>The world's most used currency exchange app<span>.</span></h2>
                 <p>Lorem ip, doloribus perspiciatis corporis! Reprehenderit, voluptatem.</p>
             </div>
-            <div class="banner-left-container">
+            <!-- <div class="banner-left-container">
                 <div class="container-header"><h3>Currency Converter</h3></div>
                 <div class="container-field">
                     <div class="container-field-rate">
@@ -80,7 +80,7 @@
                         <button id="convertBtn">Convert</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="banner-left-buttons">
                 <button class="get">Get the app <span>></span></button>
                 <button class="more">More</button>
@@ -99,13 +99,25 @@
                         <input type="text">
                     </div>
                     <div class="container-field-input">
-                        <select name="USD" id="">NGN</select><input type="number">
+                        <select name="USD" id="input-select"></select><input type="number" id="input">
                     </div>
                     <div class="container-field-output">
-                        <select name="USD" id="">USD</select><div class="screen"></div>
+                        <select name="USD" id=""><optgroup> <option value="dd">GBP</option></optgroup></select><div class="screen" id="screen"></div>
+                    </div>
+                    <div class="container-field-button">
+                        <button id="convertBtn">Convert</button>
                     </div>
                 </div>
             </div>
+            <div class="banner-right-buttons">
+                <button class="get">Get the app <span>></span></button>
+                <button class="more">More</button>
+            </div>
+            <div class="banner-right-rates">
+                <div class="rate"><h3>4.8</h3> <p>rating on app store</p></div>
+                <div  class="rate"><h3>261k+</h3> <p>active users</p></divc>
+            </div>
+        </div>
         </div>
       </section>
       <section class="bottom">

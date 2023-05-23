@@ -234,6 +234,27 @@ body {
   margin-left: 10px;
 }
 
+.banner-right .container-field-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.banner-right .container-field-button button {
+  color: white;
+  border: 0;
+  background-color: #010125;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.banner-right-buttons, .banner-right-rates {
+  display: none;
+}
+
 .bottom {
   height: auto;
   margin-top: 30px;
@@ -300,72 +321,67 @@ body {
   .banner-left-intro h2 {
     font-size: 35px;
   }
-  .banner-left-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 10px;
-    width: 300px;
-    height: auto;
-    background-color: white;
-  }
-  .banner-left-container .container-field {
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 20px;
-  }
-  .banner-left-container .container-field-rate {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .banner-left-container .container-field input {
-    background-color: #c2d6e7;
-    border: 0;
-    border-radius: 10px;
-    padding: 10px;
-  }
-  .banner-left-container .container-field-input input {
-    margin-left: 10px;
-  }
-  .banner-left-container .container-field-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  .banner-left-container .container-field-button button {
-    color: white;
-    border: 0;
-    background-color: #010125;
-    padding: 5px 15px;
-    border-radius: 10px;
-  }
   .banner-left-buttons {
-    gap: 40px;
-  }
-  .banner-left-buttons .get {
-    padding: 5px 15px;
+    display: none;
   }
   .banner-left-rates {
-    gap: 40px;
+    display: none;
   }
   .banner-right {
-    display: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .banner-right .container {
+    padding: 10px;
+    height: auto;
+  }
+  .banner-right-buttons {
+    width: 100%;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 20px;
+  }
+  .banner-right-buttons .get {
+    border: 0;
+    background-color: #010125;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner-right-buttons .get span {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+  .banner-right-buttons .more {
+    border: 0;
+    background: transparent;
+  }
+  .banner-right-rates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .banner-right-rates .rate {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
   }
   .bottom .footer .links ul {
     -webkit-box-orient: vertical;
