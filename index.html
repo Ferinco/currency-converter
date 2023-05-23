@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ferinco Converter</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu&family=Wix+Madefor+Text&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+    <section class="nav-section">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="home.html">FerinCurrency<span>.</span></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fa fa-bars" id="menu-bar"></span>
+            <!-- <span class="fa fa-times" id="cancel-bar"></span> -->
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Converter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Rates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </section>
+      <section class="banner">
+        <div class="banner-left">
+            <div class="banner-left-intro">
+                <h2>The world's most used currency exchange app<span>.</span></h2>
+                <p>Lorem ip, doloribus perspiciatis corporis! Reprehenderit, voluptatem.</p>
+            </div>
+            <div class="banner-left-container">
+                <div class="container-header"><h3>Currency Converter</h3></div>
+                <div class="container-field">
+                    <div class="container-field-rate">
+                        <input type="text">
+                    </div>
+                    <div class="container-field-input">
+                        <select name="USD" id=""><optgroup> <option value="dd">USD</option></optgroup></select><input type="number" id="input">
+                    </div>
+                    <div class="container-field-output">
+                        <select name="USD" id=""><optgroup> <option value="dd">GBP</option></optgroup></select><div class="screen" id="screen"></div>
+                    </div>
+                    <div class="container-field-button">
+                        <button id="convertBtn">Convert</button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-left-buttons">
+                <button class="get">Get the app <span>></span></button>
+                <button class="more">More</button>
+            </div>
+            <div class="banner-left-rates">
+                <div class="rate"><h3>4.8</h3> <p>rating on app store</p></div>
+                <div  class="rate"><h3>261k+</h3> <p>active users</p></divc>
+            </div>
+        </div>
+    </div>
+        <div class="banner-right">
+            <div class="container">
+                <div class="container-header"><h3>Currency Converter</h3></div>
+                <div class="container-field">
+                    <div class="container-field-rate">
+                        <input type="text">
+                    </div>
+                    <div class="container-field-input">
+                        <select name="USD" id="">NGN</select><input type="number">
+                    </div>
+                    <div class="container-field-output">
+                        <select name="USD" id="">USD</select><div class="screen"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="bottom">
+  <div class="footer">
+    <div class="brand">
+        <h4>FerinCurrency<span>.</span></h4>
+        <p>The world's most used currency exchange app<span>.</span></p>
+    </div>
+    <div class="links">
+        <ul class="">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Converter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+    </div>
+  </div>
+      </section>
     <script src="JS/index.js"></script>
 </body>
 </html>

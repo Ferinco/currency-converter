@@ -2,4 +2,282 @@ body{
     margin: 0;
     border: 0;
     padding: 0;
+    height: 100vh !important;
+    background-color: rgb(194, 214, 231)  !important;
+}
+.nav-section {
+    width: 100%;
+    // background: linear-gradient(to right, white 60%, #f5f5f5 40%);
+  }
+  .navbar {
+    width: 90%;
+    margin: auto;
+    background: transparent !important;
+    align-items: center !important;
+    .navbar-toggler{
+      border: 0 !important;
+      outline: 0 !important;
+      display: flex;
+  
+   
+    }
+    #cancel-bar{
+      position: absolute;
+      margin-top: -1000px ;
+      transition: 0.3s !important;
+    }
+    &-brand {
+      color: black;
+      font-weight: 600;
+     
+  
+      span {
+        color: rgb(31, 31, 247);
+        font-weight: 700;
+      }
+    }
+    li{
+        a{
+          &:hover{
+              color: grey !important;
+          }
+    }
+    }
+    &-nav {
+        margin-left: 70px;
+        align-items: center;
+      gap: 70px;
+      li {
+        font-weight: 500;
+        
+        a {
+          color: black !important;
+        }
+      }
+    }
+    form{
+      display: flex;
+      outline: 0 !important;
+      input{
+          align-items: center;
+          border-radius: 10px;
+          border: 0 !important;
+          outline: 0 !important;
+      }
+      button{
+          border-radius: 10px;
+          border: 1px solid rgb(56, 160, 91);
+          outline: 0 !important;
+          &:hover{
+              outline: none !important;
+              color: rgb(56, 160, 91);
+              background-color: rgb(188, 235, 188);
+              border: 1px solid rgb(188, 235, 188);
+          }
+  
+      }
+    }
+  }
+.banner{
+    display: flex;
+    padding-top: 70px;
+    height: auto;
+    width: 80%;
+    margin: auto !important;
+    &-left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        &-intro{
+            h2{
+                font-size: 50px;
+                span{
+                    color: rgb(1, 1, 37);
+                }
+            }
+        }
+        &-container{
+            display: none;
+        }
+        &-buttons{
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            .get{
+                border: 0;
+                background-color: rgb(1, 1, 37);
+                color: white;
+                padding: 5px 30px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                span{
+                    margin-left: 10px;
+                   font-size: 30px;
+                }
+            }
+            .more{
+                border: 0;
+                background: transparent;
+            }
+        }
+        &-rates{
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            .rate{
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+            }
+        }
+    }
+    &-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            &-field{
+               align-items: left;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &-rate{
+                    display: flex;
+                    justify-content: center;
+                }
+                input{
+                    background-color: rgb(194, 214, 231);
+                    border: 0;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+                &-input{
+                   input{
+                    margin-left: 10px;
+
+                   }
+                }
+            }
+        }
+        }
+}
+.bottom{
+    height: auto;
+    margin-top: 30px;
+    background-color:  rgb(1, 1, 37);
+    .footer{
+        padding: 20px 0;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+        .brand{
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+        .links{
+      ul{
+        display: flex;
+        li{
+            list-style: none;
+            a{
+                color: white;
+            }
+        }
+      }
+        }
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 700px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        &-left{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &-intro{
+                h2{
+                    font-size: 35px;
+                }
+            }
+            &-container{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                width: 300px;
+                height: auto;
+                background-color: white;
+                .container-field{
+                   align-items: left;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    &-rate{
+                        display: flex;
+ 
+                    }
+                    input{
+                        background-color: rgb(194, 214, 231);
+                        border: 0;
+                        border-radius: 10px;
+                        padding: 10px;
+                    }
+                    &-input{
+                       input{
+                        margin-left: 10px;
+                       }
+                    }
+                    &-button{
+                        display: flex;
+                        justify-content: end;
+                        button{
+                            color: white;
+                            border: 0;
+                            background-color: rgb(1, 1, 37);
+                            padding: 5px 15px;
+                            border-radius: 10px;
+
+                        }
+                    }
+                }
+            }
+            &-buttons{
+                gap: 40px;
+                .get{
+                    padding: 5px 15px;
+                }
+            }
+            &-rates{
+                gap: 40px;
+            }
+        }
+        &-right{
+display: none;
+            }
+    }
+    .bottom{
+        .footer{
+            .links{
+          ul{
+            flex-direction: column;
+            line-height: 10px !important;
+            li{
+                list-style: none;
+                a{
+                    color: white;
+                }
+            }
+          }
+            }
+        }
+    }
 }
