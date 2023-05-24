@@ -2,9 +2,19 @@ body{
     margin: 0;
     border: 0;
     padding: 0;
-    height: 100vh !important;
+    height: 100vh;
     background-color: rgb(194, 214, 231)  !important;
 }
+h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500 !important;
+    }
+    p{
+        font-family: 'Open Sans', sans-serif;}
+        button, a{
+            font-family: 'Wix Madefor Text', sans-serif;
+            outline: none !important;
+        }
 .nav-section {
     width: 100%;
     // background: linear-gradient(to right, white 60%, #f5f5f5 40%);
@@ -105,13 +115,13 @@ body{
                 border: 0;
                 background-color: rgb(1, 1, 37);
                 color: white;
-                padding: 5px 30px;
+                padding: 10px 15px;
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
                 span{
                     margin-left: 10px;
-                   font-size: 30px;
+                   
                 }
             }
             .more{
@@ -131,6 +141,7 @@ body{
         }
     }
     &-right{
+background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-icons-stock-money-stock-exchange-icon-png-5ab0b12f3f5d29.2074341615215291352596.png);
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -138,10 +149,12 @@ body{
         align-items: center;
         margin-left: 30px;
         .container{
+            padding: 10px;
             width: 300px;
-            height: 300px;
+            height: auto;
             background-color: white;
             &-field{
+                margin: auto;
                align-items: left;
                 display: flex;
                 flex-direction: column;

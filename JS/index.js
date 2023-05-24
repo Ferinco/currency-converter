@@ -2,6 +2,8 @@
 const select = document.querySelectorAll(".select")
 const input = document.getElementById("input")
 let screen = document.getElementById("screen")
+const form = document.getElementById("form")
+const currencyBtn = document.getElementById("currencyBtn")
 fetch ("https://api.frankfurter.app/currencies")
 .then(response => response.json())
 .then(data =>{
@@ -23,12 +25,6 @@ screen.style.marginLeft = "-2000px"
 screen.style.transition = "0.5s"
 
 convertBtn.addEventListener("click", (e)=>{
-  // e.preventDefault()
-  // let inputValue = input.value.trim()
-  // console.log(inputValue)
-  // outputValue = inputValue * 750
-  // screen.style.marginLeft = "0px"
-  // screen.innerHTML = `${outputValue}`
   let currency1 = select[0].value
   let currency2 = select[1].value
   let amount = input.value.trim()
@@ -37,4 +33,26 @@ convertBtn.addEventListener("click", (e)=>{
     
   }
   else alert("choose dfferent currencies")
+})
+function  convertAmount(currency1, currency2, amount){
+  const host = 'api.frankfurter.app';
+fetch(`https://${host}/latest?amount=10&from=${currency1}&to=${currency2}`)
+  .then(response => response.json())
+  .then(data => {
+      screen.style.marginLeft = "0px"
+      console.log(data)
+      console.log(data.rates)
+      answer = amount*(data.rates[currency2])
+      console.log(answer)
+  screen.innerHTML = `${answer}`
+  });
+}
+form.style.display= "none"
+form.style.transition = "0.3s"
+currencyBtn.addEventListener("click",(e)=>{
+  form.style.display = "block"
+})
+const currencyBtnMobile = document.getElementById("currencyBtnMobile")
+currencyBtnMobile.addEventListener("click",(e)=>{
+  form.style.display = "block"
 })
