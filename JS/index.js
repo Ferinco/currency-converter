@@ -44,7 +44,7 @@ fetch(`https://${host}/latest?amount=10&from=${currency1}&to=${currency2}`)
       console.log(data.rates)
       answer = amount*(data.rates[currency2])
       console.log(answer)
-  screen.innerHTML = `${answer}`
+  screen.innerHTML = `${answer}${currency2}`
   });
 }
 form.style.display= "none"
@@ -55,4 +55,5 @@ currencyBtn.addEventListener("click",(e)=>{
 const currencyBtnMobile = document.getElementById("currencyBtnMobile")
 currencyBtnMobile.addEventListener("click",(e)=>{
   form.style.display = "block"
+   document.querySelector(".banner-right-image").style.display = "none"
 })

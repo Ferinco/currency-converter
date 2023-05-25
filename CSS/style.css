@@ -3,7 +3,7 @@ body {
   border: 0;
   padding: 0;
   height: 100vh;
-  background-color: #c2d6e7 !important;
+  background-color: #fff  !important;
 }
 
 h2, h3 {
@@ -21,7 +21,10 @@ button, a {
 }
 
 .nav-section {
+  background-color: #fff;
   width: 100%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -133,7 +136,7 @@ button, a {
 }
 
 .banner-left-intro h2 span {
-  color: #010125;
+  color: #2356e0;
 }
 
 .banner-left-buttons {
@@ -146,7 +149,7 @@ button, a {
 
 .banner-left-buttons .get {
   border: 0;
-  background-color: #010125;
+  background-color: #2356e0;
   color: white;
   padding: 10px 15px;
   border-radius: 10px;
@@ -164,7 +167,9 @@ button, a {
 
 .banner-left-buttons .more {
   border: 0;
-  background: transparent;
+  background: #c2d6e7;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .banner-left-rates {
@@ -186,7 +191,10 @@ button, a {
 }
 
 .banner-right {
-  background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-icons-stock-money-stock-exchange-icon-png-5ab0b12f3f5d29.2074341615215291352596.png);
+  background-image: url(/Images/clipart2891999.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,6 +210,10 @@ button, a {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 30px;
+}
+
+.banner-right-image {
+  display: none;
 }
 
 .banner-right .container {
@@ -269,7 +281,7 @@ button, a {
   width: 100%;
   color: white;
   border: 0;
-  background-color: #010125;
+  background-color: #2356e0;
   padding: 5px 15px;
   border-radius: 10px;
 }
@@ -281,7 +293,7 @@ button, a {
 .bottom {
   height: auto;
   margin-top: 30px;
-  background-color: #010125;
+  background-color: #2356e0;
 }
 
 .bottom .footer {
@@ -294,6 +306,9 @@ button, a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bottom .footer .brand {
@@ -351,10 +366,28 @@ button, a {
     display: none;
   }
   .banner-right {
+    background: none;
     width: 100%;
     margin-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner-right-image {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 400px;
+  }
+  .banner-right-image img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
   }
   .banner-right .container {
+    margin: auto;
     padding: 10px;
     height: auto;
   }
@@ -371,7 +404,7 @@ button, a {
   }
   .banner-right-buttons .get {
     border: 0;
-    background-color: #010125;
+    background-color: #2356e0;
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
@@ -384,11 +417,12 @@ button, a {
   }
   .banner-right-buttons .get span {
     margin-left: 10px;
-    font-size: 30px;
   }
   .banner-right-buttons .more {
     border: 0;
-    background: transparent;
+    background: #c2d6e7;
+    padding: 10px 15px;
+    border-radius: 10px;
   }
   .banner-right-rates {
     display: -webkit-box;
@@ -405,6 +439,11 @@ button, a {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: left;
+  }
+  .bottom .footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .bottom .footer .links ul {
     -webkit-box-orient: vertical;

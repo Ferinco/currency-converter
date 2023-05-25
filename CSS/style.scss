@@ -3,7 +3,7 @@ body{
     border: 0;
     padding: 0;
     height: 100vh;
-    background-color: rgb(194, 214, 231)  !important;
+    background-color: #fff  !important;
 }
 h2, h3{
     font-family: 'Ubuntu', sans-serif;
@@ -16,7 +16,10 @@ h2, h3{
             outline: none !important;
         }
 .nav-section {
+    background-color: #fff;
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
     // background: linear-gradient(to right, white 60%, #f5f5f5 40%);
   }
   .navbar {
@@ -102,7 +105,7 @@ h2, h3{
             h2{
                 font-size: 50px;
                 span{
-                    color: rgb(1, 1, 37);
+                    color: rgb(35, 86, 224);
                 }
             }
         }
@@ -113,7 +116,7 @@ h2, h3{
             gap: 20px;
             .get{
                 border: 0;
-                background-color: rgb(1, 1, 37);
+                background-color: rgb(35, 86, 224);
                 color: white;
                 padding: 10px 15px;
                 border-radius: 10px;
@@ -126,7 +129,9 @@ h2, h3{
             }
             .more{
                 border: 0;
-                background: transparent;
+                background: rgb(194, 214, 231);
+                padding: 10px 15px;
+                border-radius: 10px;
             }
         }
         &-rates{
@@ -141,13 +146,19 @@ h2, h3{
         }
     }
     &-right{
-background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-icons-stock-money-stock-exchange-icon-png-5ab0b12f3f5d29.2074341615215291352596.png);
+background-image: url(/Images/clipart2891999.png);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-left: 30px;
+        &-image{
+            display: none;
+        }
         .container{
             padding: 10px;
             width: 300px;
@@ -184,7 +195,7 @@ background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-ico
                         width: 100%;
                         color: white;
                         border: 0;
-                        background-color: rgb(1, 1, 37);
+                        background-color: rgb(35, 86, 224);
                         padding: 5px 15px;
                         border-radius: 10px;
 
@@ -200,13 +211,14 @@ background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-ico
 .bottom{
     height: auto;
     margin-top: 30px;
-    background-color:  rgb(1, 1, 37);
+    background-color:  rgb(35, 86, 224);
     .footer{
         padding: 20px 0;
         display: flex;
         width: 90%;
         justify-content: space-between;
         margin: auto;
+        align-items: center;
         .brand{
             display: flex;
             flex-direction: column;
@@ -246,9 +258,24 @@ background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-ico
             }
         }
         &-right{
+            background: none;
             width: 100%;
             margin-left: 0;
+            justify-content: center;
+            &-image{
+                display: block;
+                width: 90%;
+                margin: auto;
+                height: 400px;
+                img{
+                    object-fit: contain;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                 }
+            }
             .container{
+                margin: auto;
                 padding: 10px;
                 height: auto;
             }
@@ -261,7 +288,7 @@ background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-ico
                
                 .get{
                     border: 0;
-                    background-color: rgb(1, 1, 37);
+                    background-color: rgb(35, 86, 224);
                     color: white;
                     padding: 5px 10px;
                     border-radius: 10px;
@@ -269,12 +296,14 @@ background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-ico
                     align-items: center;
                     span{
                         margin-left: 10px;
-                       font-size: 30px;
+                       
                     }
                 }
                 .more{
                     border: 0;
-                    background: transparent;
+                    background: rgb(194, 214, 231);
+                    padding: 10px 15px;
+                    border-radius: 10px;
                 }
             }
             &-rates{
@@ -291,6 +320,7 @@ background-image: url(/Images/kisspng-foreign-exchange-market-money-computer-ico
     }
     .bottom{
         .footer{
+            align-items: center;
             .links{
           ul{
             flex-direction: column;
