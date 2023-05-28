@@ -56,4 +56,11 @@ const currencyBtnMobile = document.getElementById("currencyBtnMobile")
 currencyBtnMobile.addEventListener("click",(e)=>{
   form.style.display = "block"
    document.querySelector(".banner-right-image").style.display = "none"
+   currencyBtnMobile.style.display ="none"
+})
+cancelForm = document.getElementById("cancelContainer")
+cancelForm.addEventListener("click",(e)=>{
+  form.style.display=  "none"
+  document.querySelector(".banner-right-image").style.display = "block"
+  currencyBtnMobile.style.display ="flex"
 })

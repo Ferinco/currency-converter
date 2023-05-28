@@ -3,12 +3,13 @@ body{
     border: 0;
     padding: 0;
     height: 100vh;
-    background-color: #fff  !important;
+    background: linear-gradient(to bottom, #87CEEB, #D1E8FF, white);
 }
 h2, h3{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500 !important;
     }
+
     p{
         font-family: 'Open Sans', sans-serif;}
         button, a{
@@ -16,7 +17,7 @@ h2, h3{
             outline: none !important;
         }
 .nav-section {
-    background-color: #fff;
+    background: transparent;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
@@ -105,7 +106,7 @@ h2, h3{
             h2{
                 font-size: 50px;
                 span{
-                    color: rgb(35, 86, 224);
+                    color:rgb(102, 1, 102);
                 }
             }
         }
@@ -116,7 +117,7 @@ h2, h3{
             gap: 20px;
             .get{
                 border: 0;
-                background-color: rgb(35, 86, 224);
+                background-color: rgb(102, 1, 102);
                 color: white;
                 padding: 10px 15px;
                 border-radius: 10px;
@@ -129,9 +130,10 @@ h2, h3{
             }
             .more{
                 border: 0;
-                background: rgb(194, 214, 231);
+                background-color:  rgb(13, 142, 247);
                 padding: 10px 15px;
                 border-radius: 10px;
+                color: white;
             }
         }
         &-rates{
@@ -146,7 +148,7 @@ h2, h3{
         }
     }
     &-right{
-background-image: url(/Images/clipart2891999.png);
+background-image: url(/Images/money-transfer-icon-40383.png);
 background-size: contain;
 background-position: center;
 background-repeat: no-repeat;
@@ -163,7 +165,12 @@ background-repeat: no-repeat;
             padding: 10px;
             width: 300px;
             height: auto;
-            background-color: white;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              background: white;
+              &-button{
+                display: flex;
+                justify-content: center;
+              }
             &-field{
                 margin: auto;
                align-items: left;
@@ -195,7 +202,7 @@ background-repeat: no-repeat;
                         width: 100%;
                         color: white;
                         border: 0;
-                        background-color: rgb(35, 86, 224);
+                        background-color:rgb(102, 1, 102);
                         padding: 5px 15px;
                         border-radius: 10px;
 
@@ -211,7 +218,7 @@ background-repeat: no-repeat;
 .bottom{
     height: auto;
     margin-top: 30px;
-    background-color:  rgb(35, 86, 224);
+    background-color:  rgb(13, 142, 247);
     .footer{
         padding: 20px 0;
         display: flex;
@@ -222,7 +229,7 @@ background-repeat: no-repeat;
         .brand{
             display: flex;
             flex-direction: column;
-            color: white;
+            color: black;
         }
         .links{
       ul{
@@ -230,7 +237,7 @@ background-repeat: no-repeat;
         li{
             list-style: none;
             a{
-                color: white;
+                color: black;
             }
         }
       }
@@ -262,6 +269,9 @@ background-repeat: no-repeat;
             width: 100%;
             margin-left: 0;
             justify-content: center;
+            &-rates{
+                display: none !important;
+            }
             &-image{
                 display: block;
                 width: 90%;
@@ -288,7 +298,7 @@ background-repeat: no-repeat;
                
                 .get{
                     border: 0;
-                    background-color: rgb(35, 86, 224);
+                    background-color:rgb(102, 1, 102);
                     color: white;
                     padding: 5px 10px;
                     border-radius: 10px;
@@ -328,7 +338,7 @@ background-repeat: no-repeat;
             li{
                 list-style: none;
                 a{
-                    color: white;
+                    color: black;
                 }
             }
           }
